@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title> Programmering ved Kirkenes ungdomsskole </title>
+	<style>
+		body {
+			text-align: center;
+			}
+			
+	</style>
+</head>
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="author" content="Lars Rikard">
+<meta name="description" content="An example-page for programmering valgfag 2017/2018 KUS">
+<body>
+	<h2>
+	... ved Kirkenes ungdomsskole ...
+	</h2>
+	<h3>
+	... 10. trinn ...
+	</h3>
+	<h4>
+	Det kan være både artig ...
+	</h4>
+	<h5>
+	... og frustrerende ...
+	</h5>
+	<h6>
+	... med programmering.
+	</h6>
+	<hr>
+	<h2>Plan for timene</h2>
+	<p><a target="_blank" href="planfortimen.html"><img src="planplan.jpg"\></a></p>
+	<hr>
+	<h2> Awesomeness </h2>
+	<div id="ting">
+		<ul class="oye">
+			<li><a href="https://youtu.be/VnOSASUHAJ8">Go bwah!</a></li>
+			<li><a href="https://youtu.be/auLBLk4ibAk">Tom Sawyer</a></li>
+			<li><a href="ommeg.html"> Klikk her for "Om meg"</a>
+		</ul>
+	</div>
+	<br>
+	<div id="formtest">
+	<form>
+		<label for="pswd">Enter your password: </label>
+		<input type="password" id="pswd">
+		<input type="button" value="Submit" onclick="checkPswd();" />
+	</form>
+	<!--Function to check password the already set password is admin-->
+	<script type="text/javascript">
+		function checkPswd() {
+			var confirmPassword = "lol";
+			var password = document.getElementById("pswd").value;
+			if (password == confirmPassword) {
+				window.location="index.html";
+			}
+			else{
+				alert("Passwords do not match.");
+			}
+		}
+	</script>
+	</div>	
+</body>
+</html>
